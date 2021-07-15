@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+    <head>
+        <title>Car Center</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <div align="center">
+            <p:graphicImage value="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAwFBMVEX////+/v4Adbs2NDUAbrijxt/D3ekAa7UAcLmysbGavth2q88AaLL5//8LebcoJCXi8vlpaGgAAAAwLi92dXUAZaxTmMdcWlvq+//29vYhHh/d3d0AdbfExMQfGx0tKyy61eUXExVSUFGmpqZKSEk3h768vLyTkpLk5OSFhIScm5tkYmPh4eHNzM1CQEGNu9aLiouXl5c8OTpfnserz+E7iLyCtNBno8lWmMLT6/LH4ux+fH0AYa8QCw4Aa6m81eSjHSSlAAAMpUlEQVR4nO2dC1eqTBfHN2kpqZFgKZgQaoi3Mrud8uG83/9bvTPMhUEhFUFP58x/rVaIw977N5c9M2gEICUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJfWPSSlIp+ZiKorvT2Esku+PYCwa8OSIxQOemLHIKP4IRCGEzv1lrnrtxMyfHLBTq1fKuapSf7k+PSL3f/G7epa7qvVXODEhd/9az58Pq/50WsSoBQsCRIi8FU9JCJ0CeihT5fOEiLwJbwskrL6dnhDuC+ujWJXT9VOeyK9iTVjNQ6LBqwaclhAuK2KNX73UDtdbRWAsP52oEZPSTPnhKx/j17+EarvpnKYRGWGtHDXgR14LcYD3CLH6cZJGZD4/ozRT/ZXjRgN+RX2j/nmCRuSBvAmdtJEnYUdoxFPMGMyjMFNUznPdK8JT1P3r90dvRB5HNFNUH3LeDDeuhBmDcx+ZUJwp6hc5E8b6x+WRG5HFIMwUuaYZal4Y49UjzxgsBGGmqF/nTyjk6XLtqITfRZAroliDx5wxeADCnuIuz5mCO+hEuaZ6e3zCAmcKjpiUyY4H2ChwpuBK8CHEUBBuUv1+FUQo3h9J7icFAoozxUtxnz2JY70jumGhFEdYi1zf5D9TcI7r5HwN4M9oMEUBijPFe4EfXsC7sDvjNQmq1mwZ40IQmYu3gmcKTti4i0YDWzfBcwvHog7DeIoBFGYK4cZ0IYivGzMGzPrQHY08GEwKIxTW/dHmrSjEh/UZAxZzUJtdqwul3Lspcyru3YqaKTjhlzBjhP0Fmj6o/cnSzJ+Q+TzOTMERX8Qxj0+suqC2JmgsakURfghN2CmesHMTz9vQG4O6UnRzvsqZkHn8/I/fuhU+HCoQ8anOHf6HZwxoe6CA4jtmQYRPH5GKnCk4YeOD3yz+wCMRlGbT6y2Ws72XNbt63P+Sw7QRJEB3MJlv8Z4d8I/QLvH+aMDd9NcDSsK/QP8yYT7sp89kqQGAOWm2Iy2yxQbgrQQrQyV7TWW8MJUQ5rZmRHKGmTyA2bcdwYzb3d8MCyynXhSFZpdCaVYozTKzeICmE1pxqBXX29sKmO12f/hY6udNONHC0Ay1F0ptzjJ4AD8ggGNixRuNMhAGhoECyZ2wFVa+M4q/s543Es8KxntWSLhce28XK8AWn6Q3IcL0ot9GkUbYNMI+OojVHKymTVGTcHCAF55tz/wF+jUVLgGPEK4NYvBHgpHWKOweMCa2YUHPL/Bp6LanBqklfG4aJjyUBFuCgcU8PKmSKPzZOB7FfoSWYzihSOLQSnh0wizALyxVw7lJG4uEYV834oTQC0gSI2YcLcAhwsAKX001at0Jemj/N3cJIOpP6Lw2Df3FkiAqOAnrwg2j8MLUZo0yEYKpuxoh1FzitYVtm+TFIzm12EIIChniDjJl0fAh6tGO5Tg2yU8Wim4eOBGhQwjb4VUGKqgRU4GP6sK3xSiesxH686gksa2hgBlhybFd13a3tSGah2hNIJEu6OIICaHRxKdJFrBwI26MQ5R6ohMkIWpePArbDrK1IS5sUnUJoW1Gtp3WzDT93mAboUqiUrG/RYhidzmhMwp7LCvC560ol0KXnAjvBxMHOEwxCt/vqRkJRxYXqTBLIDSUuI3TEBqH5FKYkK6OkgMdADHCzWXPd4SlMGcRK1kIycAk41ggNNrrUexFSEZxafg8mUyWCYQbxrcSEgWZCYns3AhJjdk+Ljk8sA2Ndour6WcgHEbXt7y9CYERTiJmThguUWl7biNcn/FhbRxGfrONQ+H6fdtw5dDyTBiFtqGJXwvjUEklnBNCa8atcGzUPWJu0wmJjUdWlE58ZFo5gFCl8+9wNcZqGrirDw0SRLfbVTdniwRCMnXhCg+ttPqoDMxo8XmXqjf+rg0Vko40b+b7XRW3PA3NY9fPR37USzdW6GmEMHTE8WzYaGUFI7oasW20bgoPXYHwcXOXyrIvSyvhkg76dMliM+F6p2M2XBIxwjALwIouLnDJcCU3Fk5gWboSrWk26jmFEG/LXE2QHqIMbfrSKo3DQx2Dd/XwXJCwhYSRawlWAhwz+EtbNK25+LMVVBIfE9qWzc+j4KdRJDrOuko8NM1a4mvmASmxvlVOI8T3zFVR5NycvvJMnxxgQnYyaQsJpida8SFmhqobJiCiAb6KvUE3UN3IRpir1kJTvZBQdLEL4fpbSaVZkki6+jsHSUaUtOO18okGYud2CODv0r9LuNGRfpi2EsLnxc9WYyvhS73yk3UTfbMgnTDfP+g9suqdrW14f/6ztbWX/v2Z5i/SH0BYsNM/gLBgpRMKHzLEXkDseOMwXl5R4mWidaWy+5XiyVjgyYc77y3UHlnQ+ugAevSFx5by9JienqkTlX40iNb9XQB1zrg8+gb4wubCH9AdACjqSKX9FFmZA3g9dmUvMiLc/mThdRcrlR76kwkzYU5Wz2ubizRCtJNukch6QeBDm9wcgEe8BaPHfWtp0DIDfTrU6V5nEhgA9ogRBC4t47maRT6iQDsdnVaN6djNgH0zzQvQhnrZYliOy/br0ArWG2au95t0swsDl5hF3gyn5exMyKLvWY8tmE5Z93qcsp7W7vNON0Ab5CUFH5ScARj0cwPouSNbobubHtq/ksOuTkNq2j56Qb9d6DnLMQxbrC8EI53uqaGlrRMu9Gjk9BfLMbOr7txLBcJA1WfNJjP3OGVH7cfJiDbFIJjP3QE9dgaBUmKEq7ZPaZAlfkQJQcEdBfr0G6KehWqqzwifDZN2iyTCnl4a0Joz9fnCIBtVU7PHu+6ABULdHDZb0wTCUrtPqVTN1tvAaMGdDBmhPZ6xz9sSCM0AvQdTl/VSc7lqUreoMf1SM40QddO2/ohvz+DLehM9vE2ADI5t3GPjGXM7oT8P+kltKPZS32NDa6CjZlwSQvx9B9sppREqsMQ3Ca02J+y5tA3BdzXbcOkIRYRrnQ+9VnX8xUT8QZVjaM9h9OjHdFcQQ9yJEKYWJ1y2OeEjv5OCCBV3xQlhaVFCPJQGepdZYoRzRqjq43mL1Y2HCvctnrxm6ITHCAeD+O139dlrosBWmgn6GDkcokbvg9/yJvqAJ7IthI804h5KBjODZ7ghZ50uS/QbEqCiMjS1wcBCOcUhN8thiPKST++co5zFZxSbsQ6c4JF+QQM8FO7coW6ROTSsaAZZLfHNSpFwYFhDNIstlsrcQL8nBsr3U5gNLZQBYO7OtxPGZurkyVe4gJSJCkDKC1A2j8zY2dQrN3spLSH+jn6tlUwiPJqy+tz1utMTFi1J+PMlCX++JOHPF/ztiOuAPxQxPepNwHRGaDBtq4Wo5KHaSratZCJgCjJ0fl9RbUGEC17yUG2pS/jfHSl390tY22YQJaR/4ljd9iio3J4RWb3bRnhP/wCaPxIkF8Ktf5gOF5XUoPeTJJSEklASSkKkeiZVfg7hQ+c6i74qP4cwmz/+wJ2fQPh9hCnXS8LTE379dMKzLU8y4X4PJqxuI3wtF0KIH7fznevo0TwPe/pdJ+TPSUzz9FEthDAyl+w2etCh+IS8LIRbnhYK15WNkHIhPKvUvrnZAY3oCWCHEp5V3r/z1OGPG8yb8Kxy20nxDPCV8pTDTITI03Wqp4u7yFMehEojIjyr3tQ+o3ci442L27rw+Kh9H8bJCIV1bbX+8ZXo6f5NuJNw6NO+6bUPZ2ei56v3++uGUKpx/fpxJz4pPnpU/L6ermKeKle117inz9eX33FP57kQnse3DNVqpfL77aX2dPn69F67fbirlNf+AQR/6O6+noTnpFHIyu+H29r75TnxVF/3dOgz6Wn1NK7ONoSfS1Uul9f/lQGp2NreFUuLd+6+87T5XuX9sCbkjr/2uodWfdj/PzawOPe7W1d9E0foAYRosXKz+z8iqbx19q9YHuhrfXdP5bdoGZmVkIf6+bDj9r1arzWy9Bwe6ddVBk+HfLOZW7iMp8s0r7efkMlt1N0aT2fr+STR05v4yMbDCbHn84eNVBZ3Wql+fEJWt8JljcurevkbR8jTza+LzJ7SEQE+n97qlaSchiaQ+t3HfWPtm7gZERXs6SHZ01m1XK/+el1bWh1EuBZz5+Ly5eqmXqmQmaKM/0Na/e72/fU6LHtAvSrKuqenTU83b7XzxEVVXojUmHL99Xr+VKt94Fn/4rOxWSyL26TrG9RTDc/695+dfDxtc71pc7NAJrc7mMnJ026+v9eR3OQFuL/vY/nJDXBP58fxkjPfHt6P46UAvp3cH8lNUXhSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSp9b/AZQAj/aUBZoxAAAAAElFTkSuQmCC"></p:graphicImage>
+        </div>
+        <h1>Lista de mecánicos con menor asignación</h1>
+        <h:form>
+            <p:commandButton value="Actualizar" actionListener="#{mecanicoController.actualizarLista()}" update="dt"/>
+
+            <p:dataTable id="dt" value="#{mecanicoController.lista}" var="p">
+                    <p:column headerText="Tipo Documento">
+                            <p:outputLabel value="#{p.tipoDocumento}"/>
+                    </p:column>
+
+                    <p:column headerText="Documento">
+                            <p:outputLabel value="#{p.documento}"/>
+                    </p:column>
+
+                    <p:column headerText="Primer Nombre">
+                            <p:outputLabel value="#{p.primerNombre}"/>
+                    </p:column>
+
+                    <p:column headerText="Segundo Nombre">
+                            <p:outputLabel value="#{p.segundoNombre}"/>
+                    </p:column>
+
+                    <p:column headerText="Primer Apellido">
+                            <p:outputLabel value="#{p.primerApellido}"/>
+                    </p:column>
+
+                    <p:column headerText="Segundo Apellido">
+                            <p:outputLabel value="#{p.segundoApellido}"/>
+                    </p:column>
+
+                    <p:column headerText="Celular">
+                            <p:outputLabel value="#{p.celular}"/>
+                    </p:column>
+
+                    <p:column headerText="Direccion">
+                            <p:outputLabel value="#{p.direccion}"/>
+                    </p:column>
+
+                    <p:column headerText="Email">
+                            <p:outputLabel value="#{p.email}"/>
+                    </p:column>
+            </p:dataTable>
+            
+            <br></br><br></br>
+            
+            <h:commandLink value="Volver" action="index"/>
+	</h:form>
+        
+    </body>
+</html>
